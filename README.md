@@ -1,8 +1,8 @@
-# [Django Dashboard Boilerplate](https://appseed.us/boilerplate-code/django-dashboard)
+# [Django Dashboard - AdminLTE](https://appseed.us/admin-dashboards/django-dashboard-adminlte)
 
-> Template [boilerplate code](https://appseed.us/boilerplate-code) used by [AppSeed](https://appseed.us) to generate simple admin dashboards coded in [Django](https://www.djangoproject.com/) - Features
+> **Open-Source Admin Dashboard** coded in **Django Framework** by **AppSeed** [Web App Generator](https://appseed.us/app-generator) - Features:
 
-- UI Kit: **Datta Able Dashboard** (Lite Version) provided by **CodedThemes**
+- UI Kit: **AdminLTE** provided by **ColorLib**
 - UI-Ready app, SQLite Database, Django Native ORM
 - Modular design, clean code-base
 - Session-Based Authentication, Forms validation
@@ -13,17 +13,11 @@
 
 > Links
 
-- [Boierplate Code Django Dashboard](https://boilerplate-code-django-dashboard.appseed.us/) - LIVE Demo
-- [Boierplate Code Django](https://docs.appseed.us/boilerplate-code/django-dashboard/) - Documentation
-- [Boierplate Code Django Dashboard](https://appseed.us/boilerplate-code/django-dashboard) - Official product page
-- More [Django Admin Dashboards](https://appseed.us/admin-dashboards/django) - index hosted by **[AppSeed](https://appseed.us)**
-- [Open-Source Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **[AppSeed](https://appseed.us)**
-
-> Projects that use this starter
-
-- [Django Corona Dark](https://appseed.us/admin-dashboards/django-dashboard-corona-dark) - [demo](https://django-dashboard-corona-dark.appseed.us/), [sources](https://github.com/app-generator/django-dashboard-corona-dark)
-- [Django DattaAble PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-pro) - [demo](https://django-dashboard-dattaable-pro.appseed.us/)
-- [Django Atlantis Dark](https://appseed.us/admin-dashboards/django-dashboard-atlantis-dark) - [demo](https://django-dashboard-atlantis-dark.appseed.us/), [sources](https://github.com/app-generator/django-dashboard-atlantis-dark)
+- [Django Dashboard - AdminLTE Design](https://appseed.us/admin-dashboards/django-dashboard-adminlte) - Product page
+- [Django Dashboard AdminLTE Demo](https://django-dashboard-adminlte.appseed.us/) - LIVE App
+- [Django Dashboard Boilerplate Docs](https://docs.appseed.us/admin-dashboards/flask-dashboard-adminlte) - Referrence Documentation
+- More [Django Dashboards](https://appseed.us/admin-dashboards/flask) - index hosted by **AppSeed**
+- More [Admin Dashboards](https://appseed.us/admin-dashboards) - index hosted by **AppSeed**
 
 <br />
 
@@ -31,14 +25,14 @@
 
 PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Support** (via [Discord](https://discord.gg/fZC6hup))
 
-| [Django Gradient PRO](https://appseed.us/admin-dashboards/django-dashboard-gradient-pro) | [Django Dashboard Black PRO](https://appseed.us/admin-dashboards/django-dashboard-black-pro) | [Django Dashboard Argon PRO](https://appseed.us/admin-dashboards/django-dashboard-argon-pro) |
+| [Django Dashboard Material PRO](https://appseed.us/admin-dashboards/django-dashboard-material-pro) | [Django Dashboard Black PRO](https://appseed.us/admin-dashboards/django-dashboard-black-pro) | [Django Dashboard Argon PRO](https://appseed.us/admin-dashboards/django-dashboard-argon-pro) |
 | --- | --- | --- |
-| [![Django Gradient PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-gradient-pro/master/media/django-dashboard-gradient-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-gradient-pro) | [![Django Dashboard Black PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-black-pro/master/media/django-dashboard-black-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-black-pro) | [![Django Dashboard Argon PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-argon-pro/master/media/django-dashboard-argon-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-argon-pro)
+| [![Django Dashboard Material PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-material-pro/master/media/django-dashboard-material-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-material-pro) | [![Django Dashboard Black PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-black-pro/master/media/django-dashboard-black-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-black-pro) | [![Django Dashboard Argon PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-argon-pro/master/media/django-dashboard-argon-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-argon-pro)
 
 <br />
 <br />
 
-![Boierplate Code Django Dashboard - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/boilerplate-code-django-dashboard/master/media/boilerplate-code-django-dashboard-screen.png)
+![Django Dashboard AdminLTE - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/django-dashboard-adminlte/master/media/django-dashboard-adminlte-screen.png)
 
 <br />
 
@@ -46,8 +40,8 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/boilerplate-code-django-dashboard.git
-$ cd boilerplate-code-django-dashboard
+$ git clone https://github.com/app-generator/django-dashboard-adminlte.git
+$ cd django-dashboard-adminlte
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
@@ -155,8 +149,8 @@ The application can be easily executed in a docker container. The steps:
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/boilerplate-code-django-dashboard.git
-$ cd boilerplate-code-django-dashboard
+$ git clone https://github.com/app-generator/django-dashboard-adminlte.git
+$ cd django-dashboard-adminlte
 ```
 
 > Start the app in Docker
@@ -221,4 +215,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Django Dashboard Boilerplate](https://appseed.us/boilerplate-code/django-dashboard) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Django Dashboard - AdminLTE](https://appseed.us/admin-dashboards/django-dashboard-adminlte) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
