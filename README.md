@@ -15,7 +15,7 @@
 
 - [Django Dashboard - AdminLTE Design](https://appseed.us/admin-dashboards/django-dashboard-adminlte) - Product page
 - [Django Dashboard AdminLTE Demo](https://django-dashboard-adminlte.appseed.us/) - LIVE App
-- [Django Dashboard Boilerplate Docs](https://docs.appseed.us/admin-dashboards/flask-dashboard-adminlte) - Referrence Documentation
+- [Django Dashboard Boilerplate Docs](https://docs.appseed.us/boilerplate-code/django-dashboard/) - Referrence Documentation
 - More [Django Dashboards](https://appseed.us/admin-dashboards/flask) - index hosted by **AppSeed**
 - More [Admin Dashboards](https://appseed.us/admin-dashboards) - index hosted by **AppSeed**
 
