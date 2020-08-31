@@ -2,7 +2,7 @@
 
 > **Open-Source Admin Dashboard** coded in **Django Framework** by **AppSeed** [Web App Generator](https://appseed.us/app-generator) - Features:
 
-- UI Kit: **AdminLTE** provided by **ColorLib**
+- UI Kit: **[AdminLTE](https://appseed.us/adminlte)** provided by **ColorLib**
 - UI-Ready app, SQLite Database, Django Native ORM
 - Modular design, clean code-base
 - Session-Based Authentication, Forms validation
@@ -16,8 +16,7 @@
 - [Django Dashboard - AdminLTE Design](https://appseed.us/admin-dashboards/django-dashboard-adminlte) - Product page
 - [Django Dashboard AdminLTE Demo](https://django-dashboard-adminlte.appseed.us/) - LIVE App
 - [Django Dashboard Boilerplate Docs](https://docs.appseed.us/boilerplate-code/django-dashboard/) - Referrence Documentation
-- More [Django Dashboards](https://appseed.us/admin-dashboards/flask) - index hosted by **AppSeed**
-- More [Admin Dashboards](https://appseed.us/admin-dashboards) - index hosted by **AppSeed**
+- More [AdminLTE](https://appseed.us/adminlte) starters provided by AppSeed
 
 <br />
 
