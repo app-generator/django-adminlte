@@ -12,7 +12,6 @@ One of the best open-source admin dashboard & control panel theme. Built on top 
 - Modular design, clean code-base
 - Session-Based Authentication, Forms validation
 - Deployment scripts: Docker, Gunicorn / Nginx
-- [EULA License](https://github.com/app-generator/license-eula): Free, Basic, Company
 
 <br />
 
