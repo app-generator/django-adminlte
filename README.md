@@ -6,7 +6,7 @@
 
 > Features
 
-- Latest AdminLTE: v3.1.0 (stable version)
+- **Latest AdminLTE**: *v3.1.0* (stable version)
 - Up-to-date [dependencies](./requirements.txt): **Django 3.2.6 LTS**
 - UI-Ready app, SQLite Database, Django Native ORM
 - Modular design, clean code-base
