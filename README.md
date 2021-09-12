@@ -6,6 +6,8 @@
 
 > Features
 
+- Latest AdminLTE: v3.1.0 (stable version)
+- Up-to-date [dependencies](./requirements.txt): **Django 3.2.6 LTS**
 - UI-Ready app, SQLite Database, Django Native ORM
 - Modular design, clean code-base
 - Session-Based Authentication, Forms validation
@@ -73,7 +75,7 @@ $ # Access the web app in browser: http://127.0.0.1:8000/
 
 ## Code-base structure
 
-The project is coded using a simple and intuitive structure presented bellow:
+The project is coded using a simple and intuitive structure presented below:
 
 ```bash
 < PROJECT ROOT >
@@ -107,16 +109,17 @@ The project is coded using a simple and intuitive structure presented bellow:
    |     page-500.html                     # Error 404 page
    |       *.html                          # All other HTML pages
    |
-   |-- authentication/                     # Handles auth routes (login and register)
+   |-- apps/
+   |    |-- authentication/                # Handles auth routes (login and register)
+   |    |    |
+   |    |    |-- urls.py                   # Define authentication routes  
+   |    |    |-- views.py                  # Handles login and registration  
+   |    |    |-- forms.py                  # Define auth forms  
    |    |
-   |    |-- urls.py                        # Define authentication routes  
-   |    |-- views.py                       # Handles login and registration  
-   |    |-- forms.py                       # Define auth forms  
-   |
-   |-- app/                                # A simple app that serve HTML files
-   |    |
-   |    |-- views.py                       # Serve HTML pages for authenticated users
-   |    |-- urls.py                        # Define some super simple routes  
+   |    |-- app/                           # A simple app that serve HTML files
+   |         |
+   |         |-- views.py                  # Serve HTML pages for authenticated users
+   |         |-- urls.py                   # Define some super simple routes  
    |
    |-- requirements.txt                    # Development modules - SQLite storage
    |
@@ -136,6 +139,49 @@ The project is coded using a simple and intuitive structure presented bellow:
 - Unlock the pages served by *app* node for authenticated users
 
 <br />
+
+## Recompile CSS
+
+To recompile SCSS files, follow this setup:
+
+<br />
+
+**Step #1** - Install tools
+
+- [NodeJS](https://nodejs.org/en/) 12.x or higher
+- [Gulp](https://gulpjs.com/) - globally 
+    - `npm install -g gulp-cli`
+- [Yarn](https://yarnpkg.com/) (optional) 
+
+<br />
+
+**Step #2** - Change the working directory to `assets` folder
+
+```bash
+$ cd core/static/assets
+```
+
+<br />
+
+**Step #3** - Install modules (this will create a classic `node_modules` directory)
+
+```bash
+$ npm install
+// OR
+$ yarn
+```
+
+<br />
+
+**Step #4** - Edit & Recompile SCSS files 
+
+```bash
+$ gulp scss
+```
+
+The generated file is saved in `static/assets/css` directory.
+
+<br /> 
 
 ## Deployment
 
@@ -159,7 +205,7 @@ $ cd django-dashboard-adminlte
 $ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
 ```
 
-Visit `http://localhost:5005` in your browser. The app should be up & running.
+Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
