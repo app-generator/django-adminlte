@@ -10,7 +10,7 @@ __pycache__/
 *.db
 *.sqlite3
 *.log
-
+local_settings.py
 # venv
 env
 venv
@@ -20,7 +20,7 @@ venv
 
 # javascript
 package-lock.json
-
+core/settings.py
 staticfiles/*
 !staticfiles/.gitkeep 
 .vscode/symbols.json
@@ -36,6 +36,7 @@ apps/static/assets/.temp
 __pycache__
 db.sqlite3
 media
+/static/
 
 # Backup files # 
 *.bak 
