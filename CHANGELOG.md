@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.7] 2023-01-09
+### Changes
+
+- Move to theme-based pattern
+  - [Django AdminLTE](https://github.com/app-generator/django-admin-adminlte) `v3.2.0`
+- 🚀 `Deployment` 
+  - `CI/CD` flow via `Render`
+
 ## [1.0.6] 2022-05-30
 ### Improvements
 
