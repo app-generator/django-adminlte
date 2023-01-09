@@ -1,0 +1,8 @@
+django
+gunicorn
+python-dotenv
+whitenoise
+django-admin-adminlte==1.0.3
+
+# psycopg2-binary
+# mysqlclient
