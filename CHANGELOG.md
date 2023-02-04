@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.9] 2023-02-04
+### Changes
+
+- `Fix Docker` Execution
+  - `Update Settings`: ALLOWED_HOSTS, CSRF_TRUSTED_ORIGINS `sections`
+
 ## [1.0.8] 2023-02-04
 ### Changes
 
