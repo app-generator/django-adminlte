@@ -1,5 +1,15 @@
 # Change Log
 
+## [1.0.8] 2023-02-04
+### Changes
+
+- Bump UI: [Django AdminLTE](https://github.com/app-generator/django-admin-adminlte) `v1.0.4`
+- DOCS Update (readme). New sections:
+  - `How to customize the theme`
+  - Render deployment
+- Configure the project to use `home/templates`
+- Added `custom-footer` sample
+
 ## [1.0.7] 2023-01-09
 ### Changes
 
