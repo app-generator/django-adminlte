@@ -103,8 +103,8 @@ The project is coded using a simple and intuitive structure presented below:
 
 ## How to Customize 
 
-When a template file is loaded in the controller, `Django` scans all template directories starting from the ones defined by the user, and returns the first match or an error in case the template is not found. 
-The  theme used to style this starter provides the following files: 
+When a template file is loaded, `Django` scans all template directories starting from the ones defined by the user, and returns the first match or an error in case the template is not found. 
+The theme used to style this starter provides the following files: 
 
 ```bash
 # This exists in ENV: LIB/admin_adminlte

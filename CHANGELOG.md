@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.10] 2023-02-09
+### Changes
+
+- Bump UI: [Django AdminLTE](https://github.com/app-generator/django-admin-adminlte) `v1.0.5`
+  - `AdminLTE v3.2.0` is fully integrated 
+
 ## [1.0.9] 2023-02-04
 ### Changes
 
