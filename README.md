@@ -23,6 +23,25 @@ The product is designed to deliver the best possible user experience with highly
 
 <br />
 
+## Start the app in Docker
+
+> 👉 **Step 1** - Download the code from the GH repository (using `GIT`)
+
+```bash
+$ git clone https://github.com/app-generator/django-adminlte.git
+$ cd django-adminlte
+```
+
+> 👉 **Step 2** - Start the APP in `Docker`
+
+```bash
+$ docker-compose up --build
+```
+
+Visit `http://localhost:5085` in your browser. The app should be up & running.
+
+<br />
+
 ## Manual Build 
 
 > 👉 Download the code  
