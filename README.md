@@ -5,7 +5,7 @@ The product is designed to deliver the best possible user experience with highly
 
 - 👉 [Django AdminLTE](https://appseed.us/product/adminlte/django/) - `Product page`
 - 👉 [Django AdminLTE](https://adminlte-django.appseed-srv1.com/) - `LIVE Demo`
-- 🛒 **[Django Material Dashboard PRO](https://appseed.us/product/material-dashboard2-pro/django/)** - `Premium Version`
+- ✅ [Django AdminLTE](https://www.youtube.com/watch?v=efLwn5dC7Qo) - `Video Presentation`
 
 <br />
 
