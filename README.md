@@ -1,6 +1,6 @@
 # [Django AdminLTE](https://appseed.us/product/adminlte/django/)
 
-Open-source **Django** project crafted on top of **[Django AdminLTE](https://appseed.us/product/adminlte/django/)**, an open-source and iconic `Boostrap` design.
+Open-source **Django** project crafted on top of **[AdminLTE](https://appseed.us/product/adminlte/django/)**, an open-source and iconic `Bootstrap` design.
 The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
 
 - 👉 [Django AdminLTE](https://appseed.us/product/adminlte/django/) - `Product page`
