@@ -1,0 +1,70 @@
+{% extends 'layouts/auth_base.html' %}
+
+{% block title %} Registration Page {% endblock title %}
+
+{% block bodyclass %} register-page {% endblock bodyclass %}
+
+{% block content %}
+<div class="register-box">
+  <div class="register-logo">
+    <a href="/"><b>Admin</b>LTE</a>
+  </div>
+
+  <div class="card">
+    <div class="card-body register-card-body">
+      <p class="login-box-msg">Register a new membership</p>
+
+      <form method="post">
+        {% csrf_token %}
+
+        {% for field in form %}
+        <div class="input-group mb-3">
+          {{field}}
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas {% if field.name == 'username' %} fa-user {% else %} {% if field.name == 'email' %} fa-envelope {% else %} fa-lock {% endif %} {% endif %}"></span>
+            </div>
+          </div>
+        </div>
+        <small class="text-danger">{{ field.errors }}</small>
+        {% endfor %}
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+              <label for="agreeTerms">
+               I agree to the <a href="#">terms</a>
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      <!--
+      <div class="social-auth-links text-center">
+        <p>- OR -</p>
+        <a href="#" class="btn btn-block btn-primary">
+          <i class="fab fa-facebook mr-2"></i>
+          Sign up using Facebook
+        </a>
+        <a href="#" class="btn btn-block btn-danger">
+          <i class="fab fa-google-plus mr-2"></i>
+          Sign up using Google+
+        </a>
+      </div>
+      -->
+
+      <p class="mt-4 mb-2 text-center">
+        Have an account? <a href="{% url 'login' %}" class="text-center">Sign IN</a>
+      </p>
+      
+    </div>
+    <!-- /.form-box -->
+  </div><!-- /.card -->
+</div>
+{% endblock content %}

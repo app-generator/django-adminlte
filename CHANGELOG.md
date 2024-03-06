@@ -1,5 +1,21 @@
 # Change Log
 
+## [1.0.12] 2024-03-06
+### Changes
+
+- Deprecate `distutils`
+  - use `str2bool`
+- Update Deps 
+  - `requirements.txt`  
+- Update README: [PRO Version](https://appseed.us/product/material-dashboard2-pro/django/), List features
+  - `API`, **Charts** 
+  - **DataTables** (Filters, Export)
+  - **Celery**
+  - **Media Files Manager**
+  - **Extended User Profiles**
+- Update [Custom Development](https://appseed.us/custom-development/) Section
+  - New Pricing: `$3,999`  
+
 ## [1.0.11] 2023-10-24
 ### Changes
 
