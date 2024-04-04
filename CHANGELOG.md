@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.13] 2024-04-04
+### Changes
+
+- Update README (links)
+- [Django Admin PRO](https://appseed.us/product/adminlte-pro/django/) `Release`
+
 ## [1.0.12] 2024-03-06
 ### Changes
 
