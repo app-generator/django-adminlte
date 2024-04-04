@@ -12,21 +12,21 @@ The product is designed to deliver the best possible user experience with highly
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
-| Free Version                          | [PRO Version](https://appseed.us/product/material-dashboard2-pro/django/)    | [Custom Development](https://appseed.us/custom-development/) |  
+| [Free Version](https://appseed.us/product/adminlte/django/)                          | [AdminLTE PRO](https://appseed.us/product/adminlte-pro/django/)    | [Custom Development](https://appseed.us/custom-development/) |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
-| ✓ **Django 4.2.9**                    | **Everything in Free**, plus:                                                                  | **Everything in PRO**, plus:         |
-| ✓ Best Practices                      | ✅ **Premium Bootstrap 5 Design**                                                              | ✅ **1mo Custom Development**       | 
-| ✓ Bootstrap 5, `Material` Design      | ✅ `OAuth` Google, GitHub                                                                      | ✅ **Team**: PM, Developer, Tester  |
-| ✓ `CI/CD` Flow via Render             | ✅ `API`, **[Charts](https://django-material-dash2-pro.onrender.com/charts/)**                 | ✅ Weekly Sprints                   |
-| ✓ `Docker`                            | ✅ **[DataTables](https://django-material-dash2-pro.onrender.com/tables/)** (Filters, Export)  | ✅ Technical SPECS                  |
-| -                                     |✅ **Celery**                                                                                   | ✅ Documentation                    |
-| -                                     | ✅ **Media Files Manager**                                                                     | ✅ **30 days Delivery Warranty**    |
-| -                                     | ✅ **Extended User Profiles**                                                                  |  -                                   |
-| -                                     | ✅ `Private REPO Access`                                                                       |  -                                   |
-| -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)                            |  -                                   |
-| -                                     | ✅ [AWS, DO, Azure Deploy Assistance](https://deploypro.dev/)                                             |  -                                   |
-| ------------------------------------  | ------------------------------------                                                           | ------------------------------------|
-| ✓ [LIVE Demo](https://django-material-dash2.onrender.com)  | 🚀 [LIVE Demo](https://django-material-dash2-pro.onrender.com/) | 🛒 `Order`: **[$3,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |   
+| ✓ **Django 4.2.9**                    | **Everything in Free**, plus:                                        | **Everything in PRO**, plus:         |
+| ✓ Best Practices                      | ✅ **Premium Bootstrap 5 Design**                                    | ✅ **1mo Custom Development**       | 
+| ✓ Bootstrap 5, `Material` Design      | ✅ `OAuth` Google, GitHub                                            | ✅ **Team**: PM, Developer, Tester  |
+| ✓ `CI/CD` Flow via Render             | ✅ `API`, **Charts**                                                 | ✅ Weekly Sprints                   |
+| ✓ `Docker`                            | ✅ **DataTables** (Filters, Export)                                  | ✅ Technical SPECS                  |
+| -                                     |✅ **Celery**                                                         | ✅ Documentation                    |
+| -                                     | ✅ **Media Files Manager**                                           | ✅ **30 days Delivery Warranty**    |
+| -                                     | ✅ **Extended User Profiles**                                        |  -                                   |
+| -                                     | ✅ `Private REPO Access`                                             |  -                                   |
+| -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)  |  -                                   |
+| -                                     | ✅ [AWS, DO, Azure Deploy Assistance](https://deploypro.dev/)        |  -                                   |
+| ------------------------------------  | ------------------------------------                                 | ------------------------------------|
+| ✓ [LIVE Demo](https://adminlte-django.appseed-srv1.com/)  | 🚀 [LIVE Demo](https://django-adminlte-pro.onrender.com/) | 🛒 `Order`: **[$3,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |   
 
 ![AdminLTE - Full-Stack Starter generated by AppSeed.](https://user-images.githubusercontent.com/51070104/168842202-9b80a957-a375-4e6d-8247-2cc459267a86.png)
 
