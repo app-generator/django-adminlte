@@ -24,7 +24,6 @@ The product is designed to deliver the best possible user experience with highly
 | -                                     | ✅ **Extended User Profiles**                                        | ✅ [CI/CD for AWS, DO](https://appseed.us/terms/#section-ci-cd) **(Extra)**    |
 | -                                     | ✅ `Private REPO Access`                                             |  -                                   |
 | -                                     | ✅ **[Premium Support](https://appseed.us/support/)**                |  -                                   |
-| -                                     | ✅ [AWS, DO, Azure Deploy Assistance](https://deploypro.dev/)        |  -                                   |
 | ------------------------------------  | ------------------------------------                                 | ------------------------------------|
 | ✓ [LIVE Demo](https://adminlte-django.appseed-srv1.com/)  | 🚀 [LIVE Demo](https://django-adminlte-pro.onrender.com/) | 🛒 `Order`: **[$999](https://appseed.gumroad.com/l/rocket-package-week)** (GUMROAD) |  
 
