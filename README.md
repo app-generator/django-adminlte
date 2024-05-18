@@ -21,12 +21,12 @@ The product is designed to deliver the best possible user experience with highly
 | ✓ `Docker`                            | ✅ **DataTables** (Filters, Export)                                  | ✅ Technical SPECS                  |
 | -                                     |✅ **Celery**                                                         | ✅ Documentation                    |
 | -                                     | ✅ **Media Files Manager**                                           | ✅ **30 days Delivery Warranty**    |
-| -                                     | ✅ **Extended User Profiles**                                        |  -                                   |
+| -                                     | ✅ **Extended User Profiles**                                        | ✅ [CI/CD for AWS, DO](https://appseed.us/terms/#section-ci-cd) **(Extra)**    |
 | -                                     | ✅ `Private REPO Access`                                             |  -                                   |
-| -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)  |  -                                   |
+| -                                     | ✅ **[Premium Support](https://appseed.us/support/)**                |  -                                   |
 | -                                     | ✅ [AWS, DO, Azure Deploy Assistance](https://deploypro.dev/)        |  -                                   |
 | ------------------------------------  | ------------------------------------                                 | ------------------------------------|
-| ✓ [LIVE Demo](https://adminlte-django.appseed-srv1.com/)  | 🚀 [LIVE Demo](https://django-adminlte-pro.onrender.com/) | 🛒 `Order`: **[$4,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |   
+| ✓ [LIVE Demo](https://adminlte-django.appseed-srv1.com/)  | 🚀 [LIVE Demo](https://django-adminlte-pro.onrender.com/) | 🛒 `Order`: **[$999](https://appseed.gumroad.com/l/rocket-package-week)** (GUMROAD) |  
 
 
 ![Django AdminLTE - Open-Source Django Starter ](https://github.com/app-generator/django-adminlte/assets/51070104/8f0c396d-2f33-46b9-9689-2982c987399d)
