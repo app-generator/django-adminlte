@@ -25,7 +25,7 @@ The product is designed to deliver the best possible user experience with highly
 | -                                     | ✅ `Private REPO Access`                                             |  -                                   |
 | -                                     | ✅ **[Premium Support](https://appseed.us/support/)**                |  -                                   |
 | ------------------------------------  | ------------------------------------                                 | ------------------------------------|
-| ✓ [LIVE Demo](https://adminlte-django.appseed-srv1.com/)  | 🚀 [LIVE Demo](https://django-adminlte-pro.onrender.com/) | 🛒 `Order`: **[$999](https://appseed.gumroad.com/l/rocket-package-week)** (GUMROAD) |  
+| ✓ [LIVE Demo](https://adminlte-django.appseed-srv1.com/)  | 🚀 [LIVE Demo](https://django-adminlte-pro.onrender.com/) | **[Get in Touch ➡️](https://appseed.us/custom-development/)** |  
 
 
 ![Django AdminLTE - Open-Source Django Starter ](https://github.com/app-generator/django-adminlte/assets/51070104/8f0c396d-2f33-46b9-9689-2982c987399d)
