@@ -5,6 +5,7 @@ The product is designed to deliver the best possible user experience with highly
 
 - 👉 [Django AdminLTE](https://appseed.us/product/adminlte/django/) - `Product page`
 - 👉 [Django AdminLTE](https://adminlte-django.appseed-srv1.com/) - `LIVE Demo` 
+- 👉 [Django AdminLTE Documentation](https://app-generator.dev/docs/products/django/adminlte/index.html)
 
 <br />
 
@@ -19,7 +20,7 @@ The product is designed to deliver the best possible user experience with highly
 | ✓ Boostrap 4 Design                   | ✅ **Charts**                                                        | ✅ **Team**: PM, Developer, Tester  |
 | ✓ `CI/CD` Flow via Render             | ✅ `API`,                                                            | ✅ Weekly Sprints                   |
 | ✓ `Docker`                            | ✅ **DataTables** (Filters, Export)                                  | ✅ Technical SPECS                  |
-| -                                     |✅ **Celery**                                                         | ✅ Documentation                    |
+| -                                      |✅ **Celery**                                                         | ✅ Documentation                    |
 | -                                     | ✅ **Media Files Manager**                                           | ✅ **30 days Delivery Warranty**    |
 | -                                     | ✅ **Extended User Profiles**                                        | ✅ [CI/CD for AWS, DO](https://appseed.us/terms/#section-ci-cd) **(Extra)**    |
 | -                                     | ✅ `Private REPO Access`                                             |  -                                   |

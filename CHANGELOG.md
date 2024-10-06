@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.16] 2024-10-06
+### Changes
+
+- Fallback to **Django==4.1.12** (wider MySql Support)
+  - Note: [Django versions 4.2 and onwards dropped support for MySQL 5.7](https://docs.djangoproject.com/en/4.2/releases/4.2/#dropped-support-for-mysql-5-7)
+- Added [Django AdminLTE Documentation](https://app-generator.dev/docs/products/django/adminlte/index.html) link  
+
 ## [1.0.15] 2024-05-18
 ### Changes
 
