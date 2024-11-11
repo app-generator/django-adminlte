@@ -4,7 +4,7 @@
 ### Changes
 
 - Update RM Links:
-  - 👉 [Django AdminLTE](https://app-generator.dev/docs/products/django/adminlte/index.html) - Complete Documentation
+  - 👉 [Django AdminLTE](https://app-generator.dev/docs/products/django/adminlte/index.html) - **Complete Documentation**
   - 👉 [Django AdminLTE](https://adminlte-django.appseed-srv1.com/) - LIVE Demo 
   - 👉 [Get Support](https://app-generator.dev/ticket/create/) via Email and Discord  
 

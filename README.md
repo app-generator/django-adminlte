@@ -3,7 +3,7 @@
 Open-source **Django** project crafted on top of **AdminLTE**, an open-source iconic `Bootstrap` design.
 The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
 
-- 👉 [Django AdminLTE](https://app-generator.dev/docs/products/django/adminlte/index.html) - Complete Documentation
+- 👉 [Django AdminLTE](https://app-generator.dev/docs/products/django/adminlte/index.html) - **Complete Documentation**
 - 👉 [Django AdminLTE](https://adminlte-django.appseed-srv1.com/) - LIVE Demo 
 - 👉 [Get Support](https://app-generator.dev/ticket/create/) via Email and Discord
 
@@ -13,7 +13,7 @@ The product is designed to deliver the best possible user experience with highly
 
 - **Django 4.1.12**
 - Best Practices
-- AdminLTE - Full Integration 
+- [AdminLTE](https://app-generator.dev/docs/templates/bootstrap/adminlte.html) - Full Integration 
 - `CI/CD` Flow via Render 
 - `Docker`
 
