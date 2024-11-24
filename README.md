@@ -40,7 +40,7 @@ The product is designed to deliver the best possible user experience with highly
 - **Celery** (async tasks)
 - **Deployment-Ready** for Render  
 
-![Django AdminLTE - The premium version](https://github.com/user-attachments/assets/de19c5d7-fc41-4478-bf52-fe8b93619d90)
+![Django AdminLTE - The premium version](https://github.com/user-attachments/assets/892dd62b-2127-4a8c-ba44-932999fdddbc)
 
 <br />
 
