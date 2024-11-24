@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.18] 2024-11-24
+### Changes
+
+- Update RM Links:
+  - [Django AdminLTE](https://app-generator.dev/product/adminlte/django/)
+  - [Django AdminLTE Documentation](https://app-generator.dev/docs/products/django/adminlte/index.html)
+  - [Django AdminLTE PRO](https://app-generator.dev/product/adminlte-pro/django/)
+
 ## [1.0.17] 2024-11-11
 ### Changes
 
