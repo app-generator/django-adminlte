@@ -1,5 +1,19 @@
 # Change Log
 
+## [1.0.19] 2024-11-27
+### Changes
+
+> Update RM Links
+
+- 👉 [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) - `Product Page`
+- 👉 [Django AdminLTE](https://app-generator.dev/docs/products/django/adminlte/index.html) - `Complete Information` and Support Links
+  - [Getting Started with Django](https://app-generator.dev/docs/technologies/django/index.html) - a `comprehensive tutorial`
+  - `Configuration`: Install Tailwind/Flowbite, Prepare Environment, Setting up the Database 
+  - `Start with Docker`
+  - `Manual Build`
+  - `Start the project`
+  - `Deploy on Render`
+
 ## [1.0.18] 2024-11-24
 ### Changes
 
