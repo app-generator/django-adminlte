@@ -1,5 +1,21 @@
 # Change Log
 
+## [1.0.20] 2024-12-16
+### Changes
+
+- Preselect the design in the Generator:
+  - [Django App Generator - AdminLTE Design](https://app-generator.dev/tools/django-generator/adminlte/)
+- (Optional) Design Database: edit models and fields
+- (Optional) Edit the fields for the extended user model
+- (Optional) Enable OAuth for GitHub
+- (Optional) Add Celery (async tasks)
+- (Optional) Enable Dynamic API Module
+- Docker Scripts
+- Render CI/Cd Scripts
+
+**The generated Django project is available as a ZIP Archive and also uploaded to GitHub.**
+
+
 ## [1.0.19] 2024-11-27
 ### Changes
 
