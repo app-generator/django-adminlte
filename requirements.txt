@@ -8,7 +8,7 @@ django-admin-adminlte==1.0.5
 
 # Deployment
 whitenoise==6.6.0
-gunicorn==21.2.0
+gunicorn==23.0.0
 
 # psycopg2-binary
 # mysqlclient
