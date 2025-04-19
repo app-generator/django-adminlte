@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.21] 2025-04-19
+### Changes
+
+- Update RM
+- Mention [AdminLTE](https://app-generator.dev/product/adminlte/) Design Integration 
+
 ## [1.0.20] 2024-12-16
 ### Changes
 

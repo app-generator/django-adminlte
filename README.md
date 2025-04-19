@@ -1,7 +1,6 @@
 # [Django AdminLTE](https://app-generator.dev/product/adminlte/django/)
 
-Open-source **Django Starter with AdminLTE Design**, an open-source iconic `Bootstrap` design.
-The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
+**Open-source Django Starter** crafted on top of **[AdminLTE](https://app-generator.dev/product/adminlte/)**, an open-source `Bootstrap` Design. The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
 
 - 👉 [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) - `Product Page`
 - 👉 [Django AdminLTE](https://adminlte-django.appseed-srv1.com) - `LIVE Demo` 
@@ -13,12 +12,61 @@ The product is designed to deliver the best possible user experience with highly
   - `Start the project`
   - `Deploy on Render`
 
+<br /> 
+
+## Features
+
+- Simple, Easy-to-Extend Codebase
+- [AdminLTE](https://app-generator.dev/product/adminlte/) Design Integration 
+- [Bootstrap](https://app-generator.dev/docs/templates/bootstrap.html) CSS Styling 
+- Session-based Authentication, Password recovery
+- DB Persistence: SQLite (default), can be used with MySql, PgSql
+- Docker 
+- CI/CD integration for Render 
+
+![Django AdminLTE - Open-Source Django Starter ](https://github.com/app-generator/django-adminlte/assets/51070104/8f0c396d-2f33-46b9-9689-2982c987399d)
+
 <br />
 
-### Customize with [Django App Generator - AdminLTE Design](https://app-generator.dev/tools/django-generator/adminlte/)
+## Deploy on `Render`
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+<br />
+
+
+## [AdminLTE PRO Version](https://app-generator.dev/product/adminlte-pro/django/)
+
+> The premium version provides more features, priority on support, and is more often updated - [Live Demo](https://django-adminlte-pro.onrender.com/charts/)
+
+- Simple, Easy-to-Extend Codebase
+- [AdminLTE](https://app-generator.dev/product/adminlte/) Design Integration 
+- Bootstrap Styling 
+- Dynamic Tables - read [docs](https://app-generator.dev/docs/developer-tools/dynamic-datatables.html)
+- Dynamic API - read [docs](https://app-generator.dev/docs/developer-tools/dynamic-api.html)
+- Charts
+- React Integration 
+- Session-based Authentication, Password recovery
+- OAuth GitHub
+- DB Persistence: SQLite (default), can be used with MySql, PgSql
+- [Django CLI Package](https://app-generator.dev/docs/developer-tools/django-cli/index.html)
+    - [Commit/rollback Git Changes](https://app-generator.dev/docs/developer-tools/django-cli/git-interface.html)
+    - `Backup & restore DB`
+    - [Interact with Django Core](https://app-generator.dev/docs/developer-tools/django-cli/query-django.html)
+    - `Manage Environment`
+    - `Manage Dependencies`
+- Session-based Authentication, Password recovery
+- DB Persistence: SQLite (default), can be used with MySql, PgSql
+- Docker, CI/CD for Render
+
+![Django AdminLTE - The premium version: API, Charts, React Intergration, Dynamic DT, and Docker Support.](https://github.com/user-attachments/assets/892dd62b-2127-4a8c-ba44-932999fdddbc)
+
+<br />
+
+## `Customize` with [Django App Generator](https://app-generator.dev/tools/django-generator/)
 
 - Access the [App Generator](https://app-generator.dev/tools/django-generator/) page
-- Select **AdminLTE Dashboard** as the preferred design
+- Select the preferred design
 - (Optional) Design Database: edit models and fields
 - (Optional) Edit the fields for the extended user model
 - (Optional) Enable OAuth for GitHub
@@ -29,46 +77,9 @@ The product is designed to deliver the best possible user experience with highly
 
 **The generated Django project is available as a ZIP Archive and also uploaded to GitHub.**
 
-<br />
+![Django Generator - User Interface for choosing the Design](https://github.com/user-attachments/assets/b989c434-1c53-49ff-8dda-b46dbfc142ac) 
 
-## Deploy on `Render` (free plan)
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-
-<br /> 
-
-## Features
-
-- Simple, Easy-to-Extend Codebase
-- AdminLTE Design - Full Integration 
-- Bootstrap 5 Styling 
-- Session-based Authentication, Password recovery
-- DB Persistence: SQLite (default), can be used with MySql, PgSql
-- Docker 
-- CI/CD integration for Render 
-
-![Django AdminLTE - Open-Source Django Starter ](https://github.com/app-generator/django-adminlte/assets/51070104/8f0c396d-2f33-46b9-9689-2982c987399d)
-
-<br />
-
-## [AdminLTE PRO Version](https://app-generator.dev/product/adminlte-pro/django/)
-
-> The premium version provides more features, priority on support, and is more often updated - [Live Demo](https://django-adminlte-pro.onrender.com/charts/)
-
-- **Simple, Easy-to-Extend** Codebase
-- **AdminLTE** Design 
-- **OAuth** - Github
-- **Extended User Profile**
-- **API** via DRF 
-- **Charts** via ApexJS 
-- **React Integration** (new) 
-- **Dynamic DataTables**
-- **CSV to Model** Generator
-- **CSV** Loader 
-- **Celery** (async tasks)
-- **Deployment-Ready** for Render  
-
-![Django AdminLTE - The premium version: API, Charts, React Intergration, Dynamic DT, and Docker Support.](https://github.com/user-attachments/assets/892dd62b-2127-4a8c-ba44-932999fdddbc)
+![Django App Generator - User Interface for Edit the Extended User Model](https://github.com/user-attachments/assets/f1a5fb68-a5ba-49c9-a3ae-91716de09912) 
 
 <br />
 
