@@ -1,0 +1,760 @@
+{% load i18n static admin_adminlte %}
+
+<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+    <!-- Add icons to the links using the .nav-icon class
+           with font-awesome or any other icon font library -->
+
+    {% admin_get_menu as app_list %}
+    {% if app_list %}
+    {% for app in app_list %}
+    {% if app.has_perms and not app.pinned %}
+    <li class="nav-item {% if 'dashboard' in parent %} menu-open {% endif %}">
+      <a class="nav-link {% if app_label != app.label and app.url not in request.path|urlencode  %} collapsed{% endif %}"
+        data-bs-toggle="collapse" data-bs-target="#submenu-{{ app.app_label }}" href="{{ app.url }}">
+        <i class="nav-icon {{ app.icon }}"></i>
+        <p>
+          {{ app.label|slice:10 }}{% if app.label|length > 10 %}..{% endif %}
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+
+      {% if app.models %}
+      <ul class="nav nav-treeview">
+        {% for model in app.models %}
+        {% if model.url %}
+        <li class="nav-item">
+          <a class="nav-link {% if 'bootstrap-tables' in segment or model.url in request.path|urlencode %} active {% endif %}"
+            href="{{ model.url }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>{{ model.label }}</p>
+          </a>
+        </li>
+        {% else %}
+        <li class="nav-item">{{ model.label }}</li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    <li class="nav-item {% if 'apps' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'apps' in parent %} active {% endif %}">
+        <i class="nav-icon fas fa-th-large"></i>
+        <p>
+          Apps
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'dynamic_dt' %}" class="nav-link {% if 'dynamic_dt' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Dynamic Tables</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'dynamic_api' %}" class="nav-link {% if 'dynamic_api' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Dynamic API</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'charts' %}" class="nav-link {% if 'charts' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Charts</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    {% if request.user.is_superuser %}
+      <li class="nav-item {% if 'dashboard' in parent %} menu-open {% endif %}">
+        <a href="#" class="nav-link {% if 'dashboard' in parent %} active {% endif %}">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>
+            Dashboard
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="{% url 'admin:index' %}" class="nav-link {% if 'index' in segment %} active {% endif %}">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Dashboard v1</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+    {% endif %}
+
+    {% if not request.user.is_superuser %}
+      <li class="nav-item {% if 'dashboard' in parent %} menu-open {% endif %}">
+        <a href="#" class="nav-link {% if 'dashboard' in parent %} active {% endif %}">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <p>
+            Dashboard
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="/" class="nav-link {% if 'dashboardv1' in segment %} active {% endif %}">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Dashboard v1</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'dashboardv2' %}" class="nav-link {% if 'dashboardv2' in segment %} active {% endif %}">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Dashboard v2</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'dashboardv3' %}" class="nav-link {% if 'dashboardv3' in segment %} active {% endif %}">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Dashboard v3</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+    {% endif %}
+
+    {% if request.user.is_authenticated and not request.user.is_superuser %}
+    <li class="nav-item">
+      <a href="{% url 'widgets' %}" class="nav-link {% if 'widgets' in segment %}active{% endif %}">
+        <i class="nav-icon fas fa-th"></i>
+        <p>
+          Widgets
+          <span class="right badge badge-danger">New</span>
+        </p>
+      </a>
+    </li>
+    <li class="nav-item {% if 'layout' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'layout' in parent %}active{% endif %}">
+        <i class="nav-icon fas fa-copy"></i>
+        <p>
+          Layout Options
+          <i class="fas fa-angle-left right"></i>
+          <span class="badge badge-info right">6</span>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'top_navigation' %}" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Top Navigation</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'top_nav_sidebar' %}" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Top Navigation + Sidebar</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'boxed' %}" class="nav-link {% if 'boxed_layout' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Boxed</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'fixed_sidebar' %}" class="nav-link {% if 'fixed_layout' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Fixed Sidebar</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'fixed_sidebar_custom' %}" class="nav-link {% if 'layout_cuastom' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Fixed Sidebar <small>+ Custom Area</small></p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'fixed_topnav' %}" class="nav-link {% if 'fixed_topNav' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Fixed Navbar</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'fixed_footer' %}" class="nav-link {% if 'fixed_footer' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Fixed Footer</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'collapsed_sidebar' %}" class="nav-link {% if 'collapsed_sidebar' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Collapsed Sidebar</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item {% if 'charts' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'charts' in parent %}active{% endif %}">
+        <i class="nav-icon fas fa-chart-pie"></i>
+        <p>
+          Charts
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'chartjs' %}" class="nav-link {% if 'chartjs' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>ChartJS</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'flot' %}" class="nav-link {% if 'flot' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Flot</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'inline' %}" class="nav-link {% if 'inline' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Inline</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'uplot' %}" class="nav-link {% if 'uplot' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>uPlot</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item {% if 'ui' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'ui' in parent %}active{% endif %}">
+        <i class="nav-icon fas fa-tree"></i>
+        <p>
+          UI Elements
+          <i class="fas fa-angle-left right"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'ui_general' %}" class="nav-link {% if 'general' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>General</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'ui_icons' %}" class="nav-link {% if 'icons' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Icons</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'ui_buttons' %}" class="nav-link {% if 'buttons' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Buttons</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'ui_sliders' %}" class="nav-link {% if 'sliders' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Sliders</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'ui_modals_alerts' %}" class="nav-link {% if 'modals_alerts' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Modals & Alerts</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'ui_navbar_tabs' %}" class="nav-link {% if 'navbar_tabs' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Navbar & Tabs</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'ui_timeline' %}" class="nav-link {% if 'timeline' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Timeline</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'ui_ribbons' %}" class="nav-link {% if 'ribbons' in segment %}active{% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Ribbons</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item {% if 'forms' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'forms' in parent %} active {% endif %}">
+        <i class="nav-icon fas fa-edit"></i>
+        <p>
+          Forms
+          <i class="fas fa-angle-left right"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'form_general' %}"
+            class="nav-link {% if 'form_general' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>General Elements</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'form_advanced' %}" class="nav-link {% if 'advanced_form' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Advanced Elements</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'form_editors' %}" class="nav-link {% if 'text_editors' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Editors</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'form_validation' %}" class="nav-link {% if 'validation' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Validation</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item {% if 'tables' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'tables' in parent %} active {% endif %}">
+        <i class="nav-icon fas fa-table"></i>
+        <p>
+          Tables
+          <i class="fas fa-angle-left right"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'table_simple' %}" class="nav-link {% if 'simple_table' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Simple Tables</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'table_data' %}" class="nav-link {% if 'data_table' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>DataTables</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'table_jsgrid' %}" class="nav-link {% if 'jsGrid' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>jsGrid</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-header">EXAMPLES</li>
+    <li class="nav-item">
+      <a href="{% url 'examples_calendar' %}" class="nav-link {% if 'calendar' in segment %} active {% endif %} ">
+        <i class="nav-icon far fa-calendar-alt"></i>
+        <p>
+          Calendar
+          <span class="badge badge-info right">2</span>
+        </p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{% url 'examples_gallery' %}" class="nav-link {% if 'gallery' in segment %} active {% endif %}">
+        <i class="nav-icon far fa-image"></i>
+        <p>
+          Gallery
+        </p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{% url 'examples_kanban' %}" class="nav-link {% if 'kanban_board' in segment %} active {% endif %}">
+        <i class="nav-icon fas fa-columns"></i>
+        <p>
+          Kanban Board
+        </p>
+      </a>
+    </li>
+    <li class="nav-item {% if 'mailbox' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'mailbox' in parent %} active {% endif %}">
+        <i class="nav-icon far fa-envelope"></i>
+        <p>
+          Mailbox
+          <i class="fas fa-angle-left right"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'mailbox_inbox' %}" class="nav-link {% if 'inbox' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Inbox</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'mailbox_compose' %}" class="nav-link {% if 'compose' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Compose</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'mailbox_read_mail' %}" class="nav-link {% if 'read_mail' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Read</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item {% if 'pages' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'pages' in parent %} active {% endif %}">
+        <i class="nav-icon fas fa-book"></i>
+        <p>
+          Pages
+          <i class="fas fa-angle-left right"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'examples_invoice' %}" class="nav-link {% if 'invoice' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Invoice</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_profile' %}" class="nav-link {% if 'profile' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Profile</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_e_commerce' %}" class="nav-link {% if 'ecommerce' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>E-commerce</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_projects' %}" class="nav-link {% if 'projects' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Projects</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_project_add' %}" class="nav-link {% if 'project_add' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Project Add</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_project_edit' %}" class="nav-link {% if 'project_edit' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Project Edit</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_project_detail' %}" class="nav-link {% if 'project_detail' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Project Detail</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_contacts' %}" class="nav-link {% if 'contacts' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Contacts</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_faq' %}" class="nav-link {% if 'faq' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>FAQ</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'examples_contact_us' %}" class="nav-link {% if 'contact_us' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Contact us</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item {% if 'extra' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'extra' in parent %} active {% endif %}">
+        <i class="nav-icon far fa-plus-square"></i>
+        <p>
+          Extras
+          <i class="fas fa-angle-left right"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Login & Register v1
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="{% url 'login_v1' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Login v1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'registration_v1' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Register v1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'forgot_password_v1' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Forgot Password v1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'recover_password_v1' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Recover Password v1</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Login & Register v2
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="{% url 'login_v2' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Login v2</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'registration_v2' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Register v2</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'forgot_password_v2' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Forgot Password v2</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'recover_password_v2' %}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Recover Password v2</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'lockscreen' %}" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Lockscreen</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'legacy_user_menu' %}" class="nav-link {% if 'legacy_user' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Legacy User Menu</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'language_menu' %}" class="nav-link {% if 'legacy_menu' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Language Menu</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'error_404' %}" class="nav-link {% if 'error_404' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Error 404</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'error_500' %}" class="nav-link {% if 'error_500' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Error 500</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'pace' %}" class="nav-link {% if 'pace' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Pace</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'blank_page' %}" class="nav-link {% if 'blank_page' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Blank Page</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'starter_page' %}" class="nav-link {% if 'starter_page' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Starter Page</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item {% if 'search' in parent %} menu-open {% endif %}">
+      <a href="#" class="nav-link {% if 'search' in segment %} active {% endif %}">
+        <i class="nav-icon fas fa-search"></i>
+        <p>
+          Search
+          <i class="fas fa-angle-left right"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{% url 'search_simple' %}" class="nav-link {% if 'search_simple' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Simple Search</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'search_enhanced' %}" class="nav-link {% if 'search_enhanced' in segment %} active {% endif %}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Enhanced</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-header">MISCELLANEOUS</li>
+    <li class="nav-item">
+      <a href="{% url 'iframe' %}" class="nav-link">
+        <i class="nav-icon fas fa-ellipsis-h"></i>
+        <p>Tabbed IFrame Plugin</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+        <i class="nav-icon fas fa-file"></i>
+        <p>Documentation</p>
+      </a>
+    </li>
+    <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="fas fa-circle nav-icon"></i>
+        <p>Level 1</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="nav-icon fas fa-circle"></i>
+        <p>
+          Level 1
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Level 2</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Level 2
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="far fa-dot-circle nav-icon"></i>
+                <p>Level 3</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="far fa-dot-circle nav-icon"></i>
+                <p>Level 3</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="far fa-dot-circle nav-icon"></i>
+                <p>Level 3</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Level 2</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="fas fa-circle nav-icon"></i>
+        <p>Level 1</p>
+      </a>
+    </li>
+    <li class="nav-header">LABELS</li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="nav-icon far fa-circle text-danger"></i>
+        <p class="text">Important</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="nav-icon far fa-circle text-warning"></i>
+        <p>Warning</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="nav-icon far fa-circle text-info"></i>
+        <p>Informational</p>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if request.user.is_authenticated %}
+    <li class="nav-item">
+      <a href="{% url 'logout' %}" class="nav-link">
+        <i class="fa fa-sign-out-alt nav-icon"></i>
+        <p>Logout</p>
+      </a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+      <a href="{% url 'login' %}" class="nav-link">
+        <i class="fa fa-sign-in-alt nav-icon"></i>
+        <p>Login</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{% url 'register' %}" class="nav-link">
+        <i class="fa fa-user-plus nav-icon"></i>
+        <p>Register</p>
+      </a>
+    </li>        
+    {% endif %} 
+    
+    <li class="nav-item">
+      <a target="_blank" href="https://appseed.us/support/" class="nav-link">
+        <i class="fa fa-rocket text-danger nav-icon"></i>
+        <p>Support</p>
+      </a>
+    </li>         
+    
+  </ul>
