@@ -1,7 +1,15 @@
 # Change Log
 
+## [1.0.22] 2025-04-25
+### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
+
+- Added Dynamic Tables module
+- Added Dynamic API Module  
+- Added CLI Module for different internal tasks
+- Integrate Vite for Assets management
+
 ## [1.0.21] 2025-04-19
-### Changes
+### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
 
 - Update RM
 - Mention [AdminLTE](https://app-generator.dev/product/adminlte/) Design Integration 
@@ -23,7 +31,7 @@
 
 
 ## [1.0.19] 2024-11-27
-### Changes
+### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
 
 > Update RM Links
 
@@ -37,7 +45,7 @@
   - `Deploy on Render`
 
 ## [1.0.18] 2024-11-24
-### Changes
+### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
 
 - Update RM Links:
   - [Django AdminLTE](https://app-generator.dev/product/adminlte/django/)

@@ -122,7 +122,6 @@
       </li>
     {% endif %}
 
-    {% if request.user.is_authenticated and not request.user.is_superuser %}
     <li class="nav-item">
       <a href="{% url 'widgets' %}" class="nav-link {% if 'widgets' in segment %}active{% endif %}">
         <i class="nav-icon fas fa-th"></i>
@@ -726,7 +725,6 @@
         <p>Informational</p>
       </a>
     </li>
-    {% endif %}
 
     {% if request.user.is_authenticated %}
     <li class="nav-item">
@@ -751,7 +749,7 @@
     {% endif %} 
     
     <li class="nav-item">
-      <a target="_blank" href="https://appseed.us/support/" class="nav-link">
+      <a target="_blank" href="https://app-generator.dev/support/" class="nav-link">
         <i class="fa fa-rocket text-danger nav-icon"></i>
         <p>Support</p>
       </a>
