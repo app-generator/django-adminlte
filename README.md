@@ -3,7 +3,7 @@
 **Open-source Django Starter** crafted on top of **[AdminLTE](https://app-generator.dev/product/adminlte/)**, an open-source `Bootstrap` Design. The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
 
 - 👉 [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) - `Product Page`
-- 👉 [Django AdminLTE](https://adminlte-django.appseed-srv1.com) - `LIVE Demo` 
+- 👉 [Django AdminLTE](https://django-adminlte.onrender.com) - `LIVE Demo` 
 - 👉 [Django AdminLTE](https://app-generator.dev/docs/products/django/adminlte/index.html) - `Complete Information` and Support Links
   - [Getting Started with Django](https://app-generator.dev/docs/technologies/django/index.html) - a `comprehensive tutorial`
   - `Configuration`: Install Tailwind/Flowbite, Prepare Environment, Setting up the Database 

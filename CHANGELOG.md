@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.23] 2025-04-25
+### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
+
+- Update Demo Link: [Django AdminLTE Demo](https://django-adminlte.onrender.com/)
+
 ## [1.0.22] 2025-04-25
 ### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
 
