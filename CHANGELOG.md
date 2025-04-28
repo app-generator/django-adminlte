@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.24] 2025-04-25
+### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
+
+- Bump [AdminLTE Django Library](https://app-generator.dev/docs/products/django-libs/theme-adminlte.html) Version
+
 ## [1.0.23] 2025-04-25
 ### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
 
