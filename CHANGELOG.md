@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.25] 2025-05-05
+### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
+
+- Update RM links & product info
+
 ## [1.0.24] 2025-04-25
 ### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
 
