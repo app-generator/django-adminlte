@@ -16,9 +16,9 @@
 - Session-based Authentication, Password recovery
 - DB Persistence: SQLite (default), can be used with MySql, PgSql
 - Apps:
-  - Dynamic Tables - see [DEMO](https://django-adminlte.onrender.com/dynamic-dt/product/)
-  - Dynamic API - see [DEMO](https://django-adminlte.onrender.com/api/)
-  - Charts - see [DEMO](https://django-adminlte.onrender.com/charts/)
+  - [DEMO](https://django-adminlte.onrender.com/dynamic-dt/product/) **Dynamic DataTables** - generate server-side datatables without coding
+  - [DEMO](https://django-adminlte.onrender.com/api/) **Dynamic APIs** - Expose secure APIs without coding  
+  - [DEMO](https://django-adminlte.onrender.com/charts/) **Charts** - powered by ApexCharts 
 - [Django CLI Package](https://app-generator.dev/docs/developer-tools/django-cli/index.html)
     - `Commit/rollback Git Changes`
     - `Backup & restore DB`
@@ -66,11 +66,11 @@
    - Session-based 
    - OAuth GitHub, Google
 - Apps:
-  - Dynamic Tables - see [DEMO](https://django-adminlte-pro.onrender.com/dynamic-dt/product/)
-  - Dynamic APIs - see [DEMO](https://django-adminlte-pro.onrender.com/api/)
-  - Charts - see [DEMO](https://django-adminlte-pro.onrender.com/charts/)
-  - Media Files Manager
-  - Celery (async tasks)
+  - [DEMO](https://django-adminlte-pro.onrender.com/dynamic-dt/product/) **Dynamic DataTables** - generate server-side datatables without coding  
+  - [DEMO](https://django-adminlte-pro.onrender.com/api/) **Dynamic APIs** - Expose secure APIs without coding  
+  - [DEMO](https://django-adminlte-pro.onrender.com/charts/) **Charts** - powered by ApexCharts 
+  - **Media Files Manager** - empower users to manage and preview files with ease
+  - **Celery** (async tasks)
 - [Django CLI Package](https://app-generator.dev/docs/developer-tools/django-cli/index.html)
     - `Commit/rollback Git Changes`
     - `Backup & restore DB`
