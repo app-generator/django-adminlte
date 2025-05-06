@@ -69,6 +69,7 @@
   - [DEMO](https://django-adminlte-pro.onrender.com/dynamic-dt/product/) **Dynamic DataTables** - generate server-side datatables without coding  
   - [DEMO](https://django-adminlte-pro.onrender.com/api/) **Dynamic APIs** - Expose secure APIs without coding  
   - [DEMO](https://django-adminlte-pro.onrender.com/charts/) **Charts** - powered by ApexCharts 
+  - [DEMO](https://django-adminlte-pro.onrender.com/react-charts) **React Integration**
   - **Media Files Manager** - empower users to manage and preview files with ease
   - **Celery** (async tasks)
 - [Django CLI Package](https://app-generator.dev/docs/developer-tools/django-cli/index.html)
