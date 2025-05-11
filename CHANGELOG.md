@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.27] 2025-05-11
+### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
+
+- CONFIG.Settings/SECRET_KEY: remove randomness if not specified 
+
 ## [1.0.26] 2025-05-06
 ### [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) Changes
 
