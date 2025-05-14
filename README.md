@@ -60,8 +60,8 @@
 - Simple, Easy-to-Extend Codebase
 - [AdminLTE](https://app-generator.dev/product/adminlte/) Design Integration 
 - Bootstrap Styling 
-- DB Persistence: SQLite (default), can be used with MySql, PgSql
-- Extended Users Profiles
+- DB Persistence: SQLite (default), can be used with MySQL, PostgreSQL
+- Extended User Profiles
 - Authentication
    - Session-based 
    - OAuth GitHub, Google
