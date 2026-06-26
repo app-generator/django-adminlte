@@ -1,4 +1,4 @@
-# [Django AdminLTE](https://app-generator.dev/product/adminlte/django/)
+# [Django AdminLTE](https://app-generator.dev/product/adminlte-pro/django/)
 
 **Premium Django Starter** crafted on top of **[AdminLTE](https://app-generator.dev/product/adminlte/)**, an open-source `Bootstrap` Design. The product is designed to deliver the best possible user experience with highly customizable, feature-rich pages. 
 
@@ -30,17 +30,14 @@
   - **React Integration**
   - **Media Files Manager** - empower users to manage and preview files with ease
   - **Celery** (async tasks)
-- [Django CLI Package](https://app-generator.dev/docs/developer-tools/django-cli/index.html)
+- Django CLI Package
     - `Commit/rollback Git Changes`
     - `Backup & restore DB`
     - `Interact with Django Core`
     - `Manage Environment`
     - `Manage Dependencies`  
-- [Deployment](https://app-generator.dev/docs/deployment.html)
-  - Docker/Docker Compose Scripts 
-  - CI/CD for [Render](https://app-generator.dev/docs/deployment/render/index.html)
 
 <br />
 
 ---
-[Django AdminLTE PRO](https://app-generator.dev/product/adminlte/django/) - **Django** Starter provided by [App Generator](https://app-generator.dev)
+[Django AdminLTE](https://app-generator.dev/product/adminlte-pro/django/) - **Django** Starter provided by [App Generator](https://app-generator.dev)
