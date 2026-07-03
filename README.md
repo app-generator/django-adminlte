@@ -1,43 +1,37 @@
 # [Django AdminLTE](https://app-generator.dev/product/adminlte-pro/django/)
 
-**Premium Django Starter** crafted on top of **[AdminLTE](https://app-generator.dev/product/adminlte/)**, an open-source `Bootstrap` Design. The product is designed to deliver the best possible user experience with highly customizable, feature-rich pages. 
+A clean, modular Django boilerplate integrated with the AdminLTE (Bootstrap) Dashboard layout. This starter provides the foundational plumbing needed for a data-driven web app, allowing you to skip repetitive setup and focus on implementing features.
+
+> Provided by [App-Generator](https://app-generator.dev/) - **Helping entrepreneurs build products with continuous human support**
+
+<br />
 
 - 👉 [Django AdminLTE](https://app-generator.dev/product/adminlte-pro/django/) - `Product Page`
-- 👉 [Django AdminLTE](https://app-generator.dev/docs/products/django/adminlte-pro/index.html) - `Documentation`
+- 👉 [Django Rocket](https://django-adminlte.app-generator.dev/) - `LIVE Demo`
 
 <br />
 
-## LICENSE 
+## LICENSE Update
 
-> The **product is available for [Subscribers ONLY](https://app-generator.dev/terms/)**. For more information and products, feel free to access the [App-Generator](https://app-generator.dev/) platform.
- 
+> **Product is available for subscribers ONLY** - See [Pricing](https://app-generator.dev/terms/).
+
 <br />
 
-## Features
+<img width="800" height="500" alt="Django AdminLTE - provided by App-Generator - Helping entrepreneurs build products with continuous human support" src="https://github.com/user-attachments/assets/bffc48bb-b9a1-41f8-a5b6-b22f60a417d4" />
 
-- Simple, Easy-to-Extend Codebase
-- AdminLTEDesign Integration 
-- Bootstrap Styling 
-- DB Persistence: SQLite (default), can be used with MySql, PgSql
-- Extended Users Profiles
-- Authentication
-   - Session-based 
-   - OAuth GitHub, Google
-- Apps:
-  - **Dynamic DataTables** - generate server-side datatables without coding  
-  - **Dynamic APIs** - Expose secure APIs without coding  
-  - **Charts** - powered by ApexCharts 
-  - **React Integration**
-  - **Media Files Manager** - empower users to manage and preview files with ease
-  - **Celery** (async tasks)
-- Django CLI Package
-    - `Commit/rollback Git Changes`
-    - `Backup & restore DB`
-    - `Interact with Django Core`
-    - `Manage Environment`
-    - `Manage Dependencies`  
+<br />
+
+## Technical Components & Utility Advantages
+
+- **Decoupled, Modular Codebase**: Written following standard Django best practices. The strict separation of concerns makes it easy to read, modify, and extend.
+- **AdminLTE Integration**: Ready-to-use Bootstrap components, charts, and responsive layouts designed for management dashboards.
+- **Dynamic Tables & API**: Generates tables and endpoints dynamically based on your data models, significantly reducing manual boilerplate code.
+- **Async Processing** (Celery Ready): Pre-configured Celery support to handle background tasks, automated emails, or heavy processing right out of the box.
+- **React Interoperability**: Includes a configured bridge to seamlessly load and handle interactive React components inside your Django templates.
+- **Built-in File Manager**: A lightweight asset storage utility that supports instant browser previews for standard file types.
+- **Data Visualization**: Ready-to-use data parsing layouts powered by ApexJS for analytics and reporting.
 
 <br />
 
 ---
-[Django AdminLTE](https://app-generator.dev/product/adminlte-pro/django/) - **Django** Starter provided by [App Generator](https://app-generator.dev)
+Provided by [App-Generator](https://app-generator.dev/) - **Helping entrepreneurs build products with continuous human support**
