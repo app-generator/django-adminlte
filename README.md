@@ -7,7 +7,7 @@ A clean, modular Django boilerplate integrated with the AdminLTE (Bootstrap) Das
 <br />
 
 - 👉 [Django AdminLTE](https://app-generator.dev/product/adminlte-pro/django/) - `Product Page`
-- 👉 [Django Rocket](https://django-adminlte.app-generator.dev/) - `LIVE Demo`
+- 👉 [Django AdminLTE](https://django-adminlte.app-generator.dev/) - `LIVE Demo`
 
 <br />
 
