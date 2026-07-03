@@ -1,4 +1,4 @@
-# [Django AdminLTE](https://app-generator.dev/product/adminlte-pro/django/)
+# [Django AdminLTE](https://app-generator.dev/product/adminlte/django/)
 
 A clean, modular Django boilerplate integrated with the AdminLTE (Bootstrap) Dashboard layout. This starter provides the foundational plumbing needed for a data-driven web app, allowing you to skip repetitive setup and focus on implementing features.
 
@@ -6,7 +6,7 @@ A clean, modular Django boilerplate integrated with the AdminLTE (Bootstrap) Das
 
 <br />
 
-- 👉 [Django AdminLTE](https://app-generator.dev/product/adminlte-pro/django/) - `Product Page`
+- 👉 [Django AdminLTE](https://app-generator.dev/product/adminlte/django/) - `Product Page`
 - 👉 [Django AdminLTE](https://django-adminlte.app-generator.dev/) - `LIVE Demo`
 
 <br />
